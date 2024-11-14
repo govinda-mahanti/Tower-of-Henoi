@@ -1,0 +1,304 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Courier New', Courier, monospace;
+  background-color: #232b37;
+  overflow: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  gap: 10px;
+  overflow: hidden;
+  position: relative;
+  padding-top: 100px;
+}
+
+.clublogo {
+  
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  width: 100px;
+}
+.title {
+  color: white;
+  position: absolute;
+  font-size: 130px;
+  top: 60px;
+  font-weight: 900;
+
+  font-family: "Sankofa Display", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+
+.left-sidebar {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  height: 400px;
+  padding: 5px;
+  background: #74d398;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-game {
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 20px;
+  margin-top: 50px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-game select {
+  font-size: 20px;
+  background: #5db2dd;
+  color: #FFF;
+  padding: 2px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+
+.step-counter p {
+  font-size: 34px;
+  font-weight: 600;
+  font-weight: light;
+  color: rgb(5, 5, 5);
+}
+
+
+
+button {
+  background: #ff9ccc;
+  border-radius: 9px;
+  border-style: none;
+  color: #FFF;
+  cursor: pointer;
+  padding: 5px 16px;
+  margin: 10px;
+  font-size: 24px;
+}
+
+button:hover {
+  background: #f082ac;
+}
+
+.stage {
+  height: 600px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+.step-counter{
+  position: absolute;
+  top: 10px;
+}
+
+.tower {
+  position: relative;
+  width: 400px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.stem {
+  width: 15px;
+  height: 300px;
+  background: #000;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.plate {
+  width: 300px;
+  height: 20px;
+  background: brown;
+  border-radius: 10px;
+  position: relative;
+  bottom: -20px;
+  z-index: 1;
+}
+
+.disc {
+  height: 40px;
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+}
+
+.glass {
+  background-color: #CBD1D9;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.37);
+}
+
+
+@media (max-width: 500px) {
+
+  .container {
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    gap: 50px;
+    padding-top: 30px;
+  }
+  .title {
+    color: white;
+    position: absolute;
+    font-size: 50px;
+    top: 30px;
+    font-weight: 900;
+    font-family: "Sankofa Display", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+.left-sidebar {
+  width: 300px;
+  height: 300px;
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  background: #74d398;
+  border-radius: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.new-game {
+  border: 1px solid #FFF;
+  border-radius: 5px;
+  padding: 20px;
+  margin: 10px;
+  gap: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.new-game select {
+  font-size: 20px;
+  background: #5db2dd;
+  color: #FFF;
+  padding: 2px;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+}
+
+.step-counter p {
+  font-size: 20px;
+  font-weight: 600;
+  font-weight: light;
+  color: rgb(5, 5, 5);
+}
+
+button {
+  background: #a18492;
+  border-radius: 9px;
+  border-style: none;
+  color: #FFF;
+  cursor: pointer;
+  padding: 5px 16px;
+  margin: 10px;
+  font-size: 18px;
+}
+
+button:hover {
+  background: #f082ac;
+}
+
+
+
+.stage {
+  width: 100%;
+  height: 300px;
+  border: 2px solid black;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 5px;
+  gap: 10px;
+  padding: 10px;
+  position: relative;
+}
+
+.step-counter{
+  position: absolute;
+  top: 10px;
+}
+
+.tower {
+  position: relative;
+  width: 100px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+}
+
+.stem {
+  width: 15px;
+  height: 150px;
+  background: #000;
+  border-radius: 5px;
+  position: absolute;
+  bottom: 0;
+}
+
+.plate {
+  width: 125px;
+  height: 15px;
+  background: brown;
+  border-radius: 5px;
+  position: relative;
+  bottom: -15px;
+  z-index: 1;
+}
+
+.disc {
+  height: 20px;
+  border-radius: 5px;
+  z-index: 2;
+  position: absolute;
+}
+
+.glass {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  box-shadow: 0px 8px 32px 0px rgba(0, 0, 0, 0.37);
+  max-width: 90%;
+}
+}
